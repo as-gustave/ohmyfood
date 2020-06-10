@@ -1,0 +1,108 @@
+$title_color:#FDCB46;
+$title_back:#569C87;
+
+body, .page{
+    margin: 0;
+    padding:0;
+
+}
+.header{
+    background-color: $title_back;
+    padding-bottom: 4%;
+    &__title{
+        margin: 0;
+        font-size: 5em;
+        color: $title_color;
+        text-align: center;
+        padding-top: 50px;
+        font-weight: bold;
+    }
+}
+
+.menus{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20%;
+
+    .menu{
+        background-color: black;
+        height: 486px;
+        width: 36%;
+
+    }
+
+    .menu1{
+        margin-left:11%;
+        background-color: #FBDFDC;
+        text-align: center;
+        box-shadow: -3px -3px black;
+        box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+
+            h2{
+                margin-top: 50%;
+            }
+    }
+
+    .menu2{
+        margin-right:11%;
+        background-color: #FFF5FE;
+        text-align: center;
+        box-shadow: -3px -3px black;
+        box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+            h2{
+                margin-top: 50%;
+            }
+    }
+
+    .menu3{
+        margin-left:11%;
+        background-color: #F9F9F9;
+        text-align: center;
+        box-shadow: -3px -3px black;
+        box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+            h2{
+                margin-top: 50%;
+            }
+    }
+
+    .menu4{
+        margin-right:11%;
+        background-color: #FDFFFD;
+        text-align: center;
+        box-shadow: -3px -3px black;
+        box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+            h2{
+                margin-top: 50%;
+            }
+    }
+    .menu1, .menu2, .menu3, .menu4{
+        margin-top: 77px;
+    }
+}
+.footer{
+    margin: 0;
+    background-color: $title_back;
+    color: $title_color;
+    font-size: xx-large;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__mention{
+        margin-left: 2%;
+    }
+    &__contact{
+        margin-right: 2%;
+    }
+    a{
+        color: $title_color;
+        text-decoration: none;
+        &:hover{
+            color: $title_color;
+        }
+    }
+}
