@@ -1,3 +1,4 @@
+/*les fonts */
 body, .page {
   margin: 0;
   padding: 0; }
@@ -18,50 +19,92 @@ body, .page {
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20%; }
+  justify-content: space-between; }
   .menus .menu {
     background-color: black;
     height: 486px;
-    width: 36%; }
+    width: 36%;
+    font-size: 30px; }
   .menus .menu1 {
     margin-left: 11%;
     background-color: #FBDFDC;
     text-align: center;
     box-shadow: -3px -3px black;
-    box-shadow: 1px 4px 15px #bdbdbd; }
+    box-shadow: 1px 4px 15px #bdbdbd;
+    color: #3e131a;
+    font-family: 'Devonshire'; }
+    .menus .menu1 p {
+      margin-bottom: 0; }
     .menus .menu1 h2 {
-      margin-top: 50%; }
+      margin-top: 0; }
+    .menus .menu1 img {
+      margin-top: 20%; }
+    .menus .menu1 h3 {
+      margin-top: 0px;
+      font-family: 'Segoe Print';
+      font-weight: lighter; }
   .menus .menu2 {
     margin-right: 11%;
     background-color: #FFF5FE;
     text-align: center;
     box-shadow: -3px -3px black;
-    box-shadow: 1px 4px 15px #bdbdbd; }
+    box-shadow: 1px 4px 15px #bdbdbd;
+    font-family: 'Munson';
+    font-family: 'Croissant one'; }
     .menus .menu2 h2 {
-      margin-top: 50%; }
+      margin-top: 30%; }
+    .menus .menu2 h3 {
+      font-family: 'Munson';
+      font-weight: bolder; }
   .menus .menu3 {
     margin-left: 11%;
     background-color: #F9F9F9;
     text-align: center;
     box-shadow: -3px -3px black;
-    box-shadow: 1px 4px 15px #bdbdbd; }
+    box-shadow: 1px 4px 15px #bdbdbd;
+    font-family: 'Segoe Print';
+    font-family: 'Dancing Script'; }
     .menus .menu3 h2 {
-      margin-top: 50%; }
+      margin-top: 35%; }
+    .menus .menu3 h3 {
+      font-family: 'Segoe Print';
+      font-weight: normal; }
   .menus .menu4 {
     margin-right: 11%;
     background-color: #FDFFFD;
     text-align: center;
     box-shadow: -3px -3px black;
-    box-shadow: 1px 4px 15px #bdbdbd; }
+    box-shadow: 1px 4px 15px #bdbdbd;
+    font-family: 'Segoe Print';
+    font-family: 'Kaushan Script'; }
     .menus .menu4 h2 {
-      margin-top: 50%; }
+      margin-top: 35%; }
+    .menus .menu4 h3 {
+      font-family: 'Segoe Print';
+      font-weight: lighter; }
   .menus .menu1, .menus .menu2, .menus .menu3, .menus .menu4 {
-    margin-top: 77px; }
+    margin-top: 77px;
+    text-decoration: none; }
+
+.future {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 44%;
+  text-align: center;
+  background-color: #569C87;
+  color: #FDCB46;
+  margin-bottom: 14%;
+  font-size: 35px;
+  border-radius: 15px;
+  font-family: "Varela Round";
+  font-weight: bolder; }
 
 .footer {
   margin: 0;
   background-color: #569C87;
+  font-family: "Varela Round";
+  font-weight: bolder;
   color: #FDCB46;
   font-size: xx-large;
   position: fixed;

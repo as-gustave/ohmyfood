@@ -1,5 +1,33 @@
+/*les fonts */
+
+@mixin font_lanote() {
+    font-family: 'Devonshire';
+}
+@mixin font_lechic {
+    font-family: 'Croissant one';
+}
+@mixin font_ledelice() {
+    font-family: 'Dancing Script';
+}
+@mixin font_lapalette {
+    font-family: 'Kaushan Script';
+}
+
+@mixin fontAllMenu {
+    font-family: 'Segoe Print';
+}
+
+@mixin fontMenu2 {
+    font-family: 'Munson';
+}
+
+
+///// Les variables ///////
+
 $title_color:#FDCB46;
 $title_back:#569C87;
+$size_menu:30px;
+$main_font:'Varela Round';
 
 body, .page{
     margin: 0;
@@ -25,13 +53,12 @@ body, .page{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20%;
 
     .menu{
         background-color: black;
         height: 486px;
         width: 36%;
-
+        font-size: $size_menu;
     }
 
     .menu1{
@@ -40,10 +67,24 @@ body, .page{
         text-align: center;
         box-shadow: -3px -3px black;
         box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+        color: #3e131a;
+        @include font_lanote();
+        p{
+            margin-bottom: 0;
+        }
 
-            h2{
-                margin-top: 50%;
+        h2{
+            margin-top: 0;
+        }
+        img{
+                margin-top: 20%;
             }
+
+        h3{
+            margin-top: 0px;
+            @include fontAllMenu();
+            font-weight: lighter;
+        }
     }
 
     .menu2{
@@ -52,8 +93,15 @@ body, .page{
         text-align: center;
         box-shadow: -3px -3px black;
         box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+        @include fontMenu2();
+        @include font_lechic();
             h2{
-                margin-top: 50%;
+                margin-top: 30%;
+            }
+
+            h3{
+                @include fontMenu2();
+                font-weight: bolder;
             }
     }
 
@@ -63,8 +111,15 @@ body, .page{
         text-align: center;
         box-shadow: -3px -3px black;
         box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+        @include fontAllMenu();
+        @include font_ledelice();
             h2{
-                margin-top: 50%;
+                margin-top: 35%;
+            }
+
+            h3{
+                @include fontAllMenu();
+                font-weight: normal;
             }
     }
 
@@ -74,17 +129,43 @@ body, .page{
         text-align: center;
         box-shadow: -3px -3px black;
         box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+        @include fontAllMenu();
+        @include font_lapalette();
             h2{
-                margin-top: 50%;
+                margin-top: 35%;
+            }
+            h3{
+                @include fontAllMenu();
+                font-weight: lighter;
             }
     }
     .menu1, .menu2, .menu3, .menu4{
         margin-top: 77px;
+        text-decoration: none;
     }
 }
+
+.future{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 44%;
+    text-align: center;
+    background-color: $title_back;
+    color: $title_color;
+    margin-bottom: 14%;
+    font-size: $size_menu+5;
+    border-radius: 15px;
+    font-family: $main_font;
+    font-weight: bolder;
+}
+
+
 .footer{
     margin: 0;
     background-color: $title_back;
+    font-family: $main_font;
+    font-weight: bolder;
     color: $title_color;
     font-size: xx-large;
     position: fixed;
