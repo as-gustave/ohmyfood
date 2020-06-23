@@ -13,6 +13,8 @@ body, .page {
     text-align: center;
     padding-top: 50px;
     font-weight: bold; }
+  .header__lien {
+    text-decoration: none; }
 
 .menus {
   margin-left: auto;
@@ -24,7 +26,7 @@ body, .page {
     background-color: black;
     height: 486px;
     width: 36%;
-    font-size: 30px; }
+    font-size: 25px; }
   .menus .menu1 {
     margin-left: 11%;
     background-color: #FBDFDC;
@@ -32,6 +34,7 @@ body, .page {
     box-shadow: -3px -3px black;
     box-shadow: 1px 4px 15px #bdbdbd;
     color: #3e131a;
+    transform: scale(1);
     font-family: 'Devonshire'; }
     .menus .menu1 p {
       margin-bottom: 0; }
@@ -84,7 +87,14 @@ body, .page {
       font-weight: lighter; }
   .menus .menu1, .menus .menu2, .menus .menu3, .menus .menu4 {
     margin-top: 77px;
-    text-decoration: none; }
+    text-decoration: none;
+    transform: scale(1); }
+    .menus .menu1:hover article, .menus .menu2:hover article, .menus .menu3:hover article, .menus .menu4:hover article {
+      transform: scale(1.4);
+      transition: transform 350ms ease-out; }
+    .menus .menu1:not(:hover) article, .menus .menu2:not(:hover) article, .menus .menu3:not(:hover) article, .menus .menu4:not(:hover) article {
+      transform: scale(1);
+      transition: transform 350ms ease-in; }
 
 .future {
   margin-top: 5%;
@@ -95,7 +105,7 @@ body, .page {
   background-color: #569C87;
   color: #FDCB46;
   margin-bottom: 14%;
-  font-size: 35px;
+  font-size: 30px;
   border-radius: 15px;
   font-family: "Varela Round";
   font-weight: bolder; }
@@ -121,5 +131,15 @@ body, .page {
     text-decoration: none; }
     .footer a:hover {
       color: #FDCB46; }
+
+/* mention  */
+.mention__main {
+  margin-bottom: 15%; }
+  .mention__main__heading2, .mention__main__date {
+    text-align: center; }
+  .mention__main__paragraph {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto; }
 
 /*# sourceMappingURL=style.css.map */

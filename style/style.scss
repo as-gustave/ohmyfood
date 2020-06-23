@@ -26,14 +26,16 @@
 
 $title_color:#FDCB46;
 $title_back:#569C87;
-$size_menu:30px;
+$size_menu:25px;
 $main_font:'Varela Round';
+
+//// style ////
 
 body, .page{
     margin: 0;
     padding:0;
-
 }
+
 .header{
     background-color: $title_back;
     padding-bottom: 4%;
@@ -44,6 +46,9 @@ body, .page{
         text-align: center;
         padding-top: 50px;
         font-weight: bold;
+    }
+    &__lien{
+        text-decoration: none;
     }
 }
 
@@ -68,6 +73,7 @@ body, .page{
         box-shadow: -3px -3px black;
         box-shadow: 1px 4px 15px  rgb(189, 189, 189);
         color: #3e131a;
+        transform: scale(1);
         @include font_lanote();
         p{
             margin-bottom: 0;
@@ -103,6 +109,7 @@ body, .page{
                 @include fontMenu2();
                 font-weight: bolder;
             }
+            
     }
 
     .menu3{
@@ -142,6 +149,17 @@ body, .page{
     .menu1, .menu2, .menu3, .menu4{
         margin-top: 77px;
         text-decoration: none;
+        transform: scale(1);
+        
+        &:hover article{
+            transform: scale(1.4);
+            transition: transform 350ms ease-out;
+        }
+
+        &:not(:hover) article{
+            transform: scale(1);
+            transition: transform 350ms ease-in;
+        }
     }
 }
 
@@ -185,5 +203,22 @@ body, .page{
         &:hover{
             color: $title_color;
         }
+    }
+}
+
+/* mention  */
+
+.mention__main{
+
+    margin-bottom: 15%;
+
+    &__heading2, &__date{
+        text-align: center;
+    }
+
+    &__paragraph{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
