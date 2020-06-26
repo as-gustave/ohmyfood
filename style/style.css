@@ -61,7 +61,7 @@ body, .page {
       font-weight: bolder; }
   .menus .menu3 {
     margin-left: 11%;
-    background-color: #F9F9F9;
+    background-color: #E9EBEB;
     text-align: center;
     box-shadow: -3px -3px black;
     box-shadow: 1px 4px 15px #bdbdbd;
@@ -141,5 +141,77 @@ body, .page {
     width: 60%;
     margin-left: auto;
     margin-right: auto; }
+
+.restau__name {
+  text-align: center;
+  text-shadow: 3px 3px 10px grey;
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+.carte {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 15%; }
+
+.carte--lanote {
+  background-color: #FBDFDC;
+  color: #3e131a;
+  font-family: 'Devonshire';
+  font-size: xx-large;
+  font-weight: 100; }
+  .carte--lanote__image {
+    padding-top: 10%; }
+  .carte--lanote__part {
+    font-family: "Kalam";
+    font-weight: bold; }
+    .carte--lanote__part__plat {
+      font-family: "Kalam";
+      font-weight: lighter;
+      font-size: large;
+      text-align: left;
+      text-indent: 10%; }
+
+.carte--ledelice {
+  background-color: #E9EBEB;
+  color: #3e131a;
+  font-family: 'Devonshire';
+  font-size: xx-large;
+  font-weight: 100; }
+  .carte--ledelice__part {
+    font-family: "Kalam";
+    font-weight: bold; }
+    .carte--ledelice__part__plat {
+      font-family: "Kalam";
+      font-weight: lighter;
+      font-size: large;
+      text-align: left;
+      text-indent: 10%; }
+
+.carte--lechic {
+  background-color: #FFF5FE;
+  color: #3e131a;
+  font-family: 'Devonshire';
+  font-size: xx-large;
+  font-weight: 100; }
+  .carte--lechic__part {
+    font-family: "Kalam";
+    font-weight: bold; }
+    .carte--lechic__part__plat {
+      font-family: "Kalam";
+      font-weight: lighter;
+      font-size: large;
+      text-align: left;
+      text-indent: 10%; }
+
+.carte
+.right {
+  float: right;
+  margin-right: 10%;
+  font-weight: bold; }
+
+.pic__lanote {
+  margin-right: 2%; }
 
 /*# sourceMappingURL=style.css.map */

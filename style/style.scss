@@ -114,7 +114,7 @@ body, .page{
 
     .menu3{
         margin-left:11%;
-        background-color: #F9F9F9;
+        background-color: #E9EBEB;
         text-align: center;
         box-shadow: -3px -3px black;
         box-shadow: 1px 4px 15px  rgb(189, 189, 189);
@@ -221,4 +221,98 @@ body, .page{
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+/// les restau ///
+
+.restau__name{
+    text-align: center;
+    text-shadow: 3px 3px 10px grey;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    }
+
+.carte{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 15%;
+    }
+
+.carte--lanote{
+    background-color: #FBDFDC;
+    color: #3e131a;
+    @include font_lanote();
+    font-size: xx-large;
+    font-weight: 100;
+    &__image{
+        padding-top: 10%;
+    }
+
+    &__part{
+        font-family: "Kalam";
+        font-weight: bold;
+
+        &__plat{
+        font-family: "Kalam";
+        font-weight: lighter;
+        font-size: large;
+            text-align: left;
+            text-indent: 10%;
+        }
+    }
+}
+
+.carte--ledelice{
+    background-color:#E9EBEB;
+    color: #3e131a;
+    @include font_lanote();
+    font-size: xx-large;
+    font-weight: 100;
+    &__part{
+        font-family: "Kalam";
+        font-weight: bold;
+
+        &__plat{
+        font-family: "Kalam";
+        font-weight: lighter;
+        font-size: large;
+            text-align: left;
+            text-indent: 10%;
+        }
+    }
+}
+
+.carte--lechic{
+    background-color:#FFF5FE;
+    color: #3e131a;
+    @include font_lanote();
+    font-size: xx-large;
+    font-weight: 100;
+    &__part{
+        font-family: "Kalam";
+        font-weight: bold;
+
+        &__plat{
+        font-family: "Kalam";
+        font-weight: lighter;
+        font-size: large;
+            text-align: left;
+            text-indent: 10%;
+        }
+    }
+}
+
+.carte
+    
+
+.right{
+    float: right;
+    margin-right: 10%;
+    font-weight: bold;
+}
+
+.pic__lanote{
+    margin-right: 2%;
 }
