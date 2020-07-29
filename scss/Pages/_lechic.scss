@@ -33,6 +33,9 @@
         margin-right: auto;
         @include font('Croissant one',normal,medium);
 
+        p{
+            margin-bottom: 1cm;
+        }
     }
     
     .carte--lechic__part__decorg,.carte--lechic__part__decord{

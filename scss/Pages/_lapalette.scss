@@ -31,6 +31,10 @@
         margin-right: auto;
         @include font('Kaushan Script',normal,large);
 
+        p{
+            margin-bottom: 1cm;
+        }
+        
     }
     
     .carte--lapalette__part__decorg,.carte--lapalette__part__decord{

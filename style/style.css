@@ -348,7 +348,7 @@ body, .page {
     margin-left: auto;
     margin-right: auto; }
     .menu--lanote p {
-      margin-bottom: 0.5cm; }
+      margin-bottom: 1cm; }
 
   .carte--lanote__part__decorg, .carte--lanote__part__decord {
     display: none; }
@@ -480,6 +480,8 @@ body, .page {
     font-family: "Kaushan Script";
     font-weight: normal;
     font-size: large; }
+    .menu--lapalette p {
+      margin-bottom: 1cm; }
 
   .carte--lapalette__part__decorg, .carte--lapalette__part__decord {
     display: none; }
@@ -615,6 +617,8 @@ body, .page {
     font-family: "Croissant one";
     font-weight: normal;
     font-size: medium; }
+    .menu--lechic p {
+      margin-bottom: 1cm; }
 
   .carte--lechic__part__decorg, .carte--lechic__part__decord {
     display: none; }
@@ -759,6 +763,8 @@ body, .page {
     font-family: "Dancing Script";
     font-weight: normal;
     font-size: large; }
+    .menu--ledelice p {
+      margin-bottom: 1cm; }
 
   .carte--ledelice__part__decorg, .carte--ledelice__part__decord {
     display: none; }
