@@ -32,10 +32,12 @@
         margin-left: auto;
         margin-right: auto;
         @include font('Dancing Script',normal,large);
+    }
+    
 
-        p{
-            margin-bottom: 1cm;
-        }
+    .carte--ledelice__part__plat{
+        margin-bottom: 1cm;
+        font-size: small!important;
     }
 
     .carte--ledelice__part__decorg,.carte--ledelice__part__decord{
@@ -133,5 +135,9 @@
     }
     .carte--ledelice__part__decord{
         display: none;
+    }
+    .carte--ledelice__part__plat{
+        margin-bottom: 1cm;
+        font-size: small!important;
     }
 }

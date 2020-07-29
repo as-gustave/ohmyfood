@@ -148,8 +148,8 @@
 
 @media screen and (max-width: 1024px) {
   .future {
-    font-size: large !important;
-    width: 90%;
+    font-size: medium;
+    width: 90% !important;
     margin-bottom: 20%; } }
 /* IMPORTATION DU DOSSIER LAYOUTS */
 /* Page */
@@ -347,8 +347,10 @@ body, .page {
     height: auto;
     margin-left: auto;
     margin-right: auto; }
-    .menu--lanote p {
-      margin-bottom: 1cm; }
+
+  .carte--lanote__part__plat {
+    margin-bottom: 1cm;
+    font-size: small !important; }
 
   .carte--lanote__part__decorg, .carte--lanote__part__decord {
     display: none; }
@@ -480,8 +482,10 @@ body, .page {
     font-family: "Kaushan Script";
     font-weight: normal;
     font-size: large; }
-    .menu--lapalette p {
-      margin-bottom: 1cm; }
+
+  .carte--lapalette__part__plat {
+    margin-bottom: 1cm;
+    font-size: small !important; }
 
   .carte--lapalette__part__decorg, .carte--lapalette__part__decord {
     display: none; }
@@ -617,8 +621,10 @@ body, .page {
     font-family: "Croissant one";
     font-weight: normal;
     font-size: medium; }
-    .menu--lechic p {
-      margin-bottom: 1cm; }
+
+  .carte--lechic__part__plat {
+    margin-bottom: 1cm;
+    font-size: small !important; }
 
   .carte--lechic__part__decorg, .carte--lechic__part__decord {
     display: none; }
@@ -763,8 +769,10 @@ body, .page {
     font-family: "Dancing Script";
     font-weight: normal;
     font-size: large; }
-    .menu--ledelice p {
-      margin-bottom: 1cm; }
+
+  .carte--ledelice__part__plat {
+    margin-bottom: 1cm;
+    font-size: small !important; }
 
   .carte--ledelice__part__decorg, .carte--ledelice__part__decord {
     display: none; }
@@ -839,7 +847,11 @@ body, .page {
     display: none; }
 
   .carte--ledelice__part__decord {
-    display: none; } }
+    display: none; }
+
+  .carte--ledelice__part__plat {
+    margin-bottom: 1cm;
+    font-size: small !important; } }
 @keyframes vibrate {
   0% {
     transform: skew(0deg); }

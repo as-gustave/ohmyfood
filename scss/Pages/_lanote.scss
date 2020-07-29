@@ -36,11 +36,13 @@
         height: auto;
         margin-left: auto;
         margin-right: auto;
-
-        p{
-            margin-bottom: 1cm;
-        }
     }
+
+    .carte--lanote__part__plat{
+        margin-bottom: 1cm;
+        font-size: small!important;
+    }
+
     .carte--lanote__part__decorg,.carte--lanote__part__decord{
         display: none;
     }
