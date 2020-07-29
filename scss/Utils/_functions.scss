@@ -1,0 +1,40 @@
+@keyframes vibrate{
+    0%{
+        transform: skew(0deg);
+    }
+    25% {
+        transform: skew(7deg);
+        transform-origin: left bottom;
+    }
+    40% {
+        transform: skew(15deg);
+        transform-origin: left bottom;
+    }65%{
+        transform: skew(-4deg);
+        transform-origin: right bottom;
+
+    }
+    80%{
+        transform: skew(-15deg);
+        transform-origin: right bottom;
+    }
+    
+    100%{
+        transform: skew(0deg);
+        transform-origin: right bottom;
+    }
+}
+
+@keyframes vibrate2{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0deg);
+    }
+    
+}
+

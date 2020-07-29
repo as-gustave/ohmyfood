@@ -1,0 +1,126 @@
+@import '../Utils/functions';
+@import '../Utils/mixins';
+@import '../Utils/variables';
+
+.menu--lanote{
+    @include menu_base();
+    margin-left:11%;
+    background-color: #FBDFDC;
+    text-align: center;
+    box-shadow: -3px -3px black;
+    box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+    color: #3e131a;
+    @include font('Devonshire',normal,x-large);
+    p{
+        margin-bottom: 0;
+    }
+
+    h2{
+        margin-top: 0;
+    }
+    img{
+        margin-top: 20%;
+        }
+
+    h3{
+        margin-top: 0px;
+        font-weight: lighter;
+    }
+
+}
+
+@media screen and (max-width:1024px){
+    
+    .menu--lanote{
+        width: 60%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .carte--lanote__part__decorg,.carte--lanote__part__decord{
+        display: none;
+    }
+    .carte--lanote__part__decorg1,.carte--lanote__part__decord1{
+        display: none;
+    }
+    .carte--lanote__part__decorg2,.carte--lanote__part__decord2{
+        display: none;
+    }
+    .carte--lanote__part__plat{
+        text-indent: 2% !important;
+    }
+}
+.underline--lanote{
+    @include underline();
+}
+.underline--lanote:after{
+    @include underline-after(#3e131a);
+}
+
+.underline--lanote:hover:after{
+    @include underline-transition();
+}
+
+.pic__lanote{
+    margin-right: 2%;
+}
+
+.carte--lanote{
+    background-color: #FBDFDC;
+    color: #3e131a;
+    margin-bottom: 15%;
+    font-size: x-large;
+    font-weight: 100;
+    border: none 2px transparent;
+    box-shadow: 1px 1px 5px grey;
+    &__image{
+        padding-top: 10%;
+    }
+
+    &__part{
+        font-family: "Kalam";
+        font-weight: bold;
+        font-size: x-large;
+
+        &__decorg{
+            width: 20%;
+            margin-right: 14.5%;
+        }
+        &__decord{
+            width: 20%;
+            margin-left: 14.5%;
+        }
+
+        &__decorg1{
+            width: 20%;
+            margin-right: 11%;
+        }
+        &__decord1{
+            width: 20%;
+            margin-left: 11%;
+        }
+
+        &__decorg2{
+            width: 20%;
+            margin-right: 9%;
+        }
+        &__decord2{
+            width: 20%;
+            margin-left: 9%;
+        }
+
+        &__plat{
+        font-family: "Kalam";
+        font-weight: lighter;
+        font-size: large;
+            text-align: left;
+            text-indent: 10%;
+        }
+    }
+    &__backtitle{
+        font-family: "Kalam", sans-serif;
+        font-weight: lighter;
+        font-size: medium;
+    }
+}

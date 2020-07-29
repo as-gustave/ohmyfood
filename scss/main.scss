@@ -1,0 +1,21 @@
+/* IMPORTATION DU DOSSIER COMPOSANTS */
+@import 'Composants/contact';
+@import 'Composants/mention';
+@import 'Composants/future';
+
+/* IMPORTATION DU DOSSIER LAYOUTS */
+@import 'Layouts/container';
+@import 'Layouts/footer';
+@import 'Layouts/header';
+
+/* IMPORTATION DU DOSSIER PAGES */
+@import 'Pages/lanote';
+@import 'Pages/lapalette';
+@import 'Pages/lechic';
+@import 'Pages/ledelice';
+@import 'Pages/mention';
+
+/* IMPORTATION DU DOSSIER UTILS */
+@import 'Utils/functions';
+@import 'Utils/mixins';
+@import 'Utils/variables';

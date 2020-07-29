@@ -1,0 +1,131 @@
+@import '../Utils/functions';
+@import '../Utils/mixins';
+@import '../Utils/variables';
+
+.menu--lapalette{
+    @include menu_base();
+    margin-right:11%;
+    background-color: #FDFFFD;
+    text-align: center;
+    box-shadow: -3px -3px black;
+    box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+    @include font('Kaushan Script',normal,x-large);
+    h2{
+        margin-top: 35%;
+        background:linear-gradient(to right, #3C933A,#C0FC86);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip:text;
+    }
+    h3{
+        font-weight: lighter;
+        color: #3C933A;
+    }
+}
+
+@media screen and (max-width:1024px){
+
+    .menu--lapalette{
+        width: 60%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        @include font('Kaushan Script',normal,large);
+
+    }
+    
+    .carte--lapalette__part__decorg,.carte--lapalette__part__decord{
+        display: none;
+    }
+    .carte--lapalette__part__decorg1,.carte--lapalette__part__decord1{
+        display: none;
+    }
+    .carte--lapalette__part__decorg2,.carte--lapalette__part__decord2{
+        display: none;
+    }
+    .carte--lapalette__part__plat{
+        text-indent: 2% !important;
+    }
+}
+
+.underline--lapalette{
+    @include underline();
+}
+.underline--lapalette:after{
+    @include underline-after(#3C933A);
+}
+
+.underline--lapalette:hover:after{
+    @include underline-transition();
+}
+
+
+.carte--lapalette{
+    background-color:#FDFFFD;
+    margin-bottom: 15%;
+    color: #3e131a;
+    font-size: xx-large;
+    font-weight: 100;
+    padding-bottom: 2%;
+    border: none 2px transparent;
+    box-shadow: 1px 1px 5px grey;
+    &:hover + .border{
+        color: white;
+    }
+
+    .border{
+        border-bottom: solid 3px #3e131a;
+        
+    }
+
+    &__title{
+        background:linear-gradient(to right, #3C933A,#C0FC86);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip:text;
+        padding-top: 7%;
+    }
+
+    &__part{
+        font-family: "Caveat", sans-serif;
+        font-weight: bold;
+        color: #424242;
+        font-size: larger;
+        
+
+        &__decorg{
+            width: 23%;
+            margin-right: 12%;
+        }
+        &__decord{
+            width: 23%;
+            margin-left: 12%;
+        }
+
+        &__decorg1{
+            width: 23%;
+            margin-right: 7%;
+        }
+        &__decord1{
+            width: 23%;
+            margin-left: 7%;
+        }
+
+        &__decorg2{
+            width: 23%;
+            margin-right: 6%;
+        }
+        &__decord2{
+            width: 23%;
+            margin-left: 6%;
+        }
+
+        &__plat{
+            font-family: "Caveat", sans-serif;
+            color: #424242;
+            font-weight: lighter;
+            font-size: 0.6em;
+            text-align: left;
+            text-indent: 10%;
+
+        }
+    }
+}    

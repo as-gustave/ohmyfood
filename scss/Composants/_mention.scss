@@ -1,0 +1,17 @@
+@import '../Utils/functions';
+@import '../Utils/mixins';
+@import '../Utils/variables';
+
+.footer__mention{
+    margin-left: 2%;
+
+    &:hover{
+        animation: vibrate 300ms 200ms;
+        animation-iteration-count: 10;
+    }   
+}
+@media screen and (max-width:1024px){
+    .footer__mention{
+        font-size: large;
+    }
+}

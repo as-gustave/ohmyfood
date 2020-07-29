@@ -1,0 +1,136 @@
+@import '../Utils/functions';
+@import '../Utils/mixins';
+@import '../Utils/variables';
+
+.menu--lechic{
+    @include menu_base();
+    margin-right:11%;
+    background-color: #FFF5FE;
+    text-align: center;
+    box-shadow: -3px -3px black;
+    box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+    @include font('Croissant one',normal,large);
+    h2{
+        margin-top: 40%;
+        background:linear-gradient(to right, #C77413,#905BFD);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip:text;
+    }
+
+    h3{
+        margin-top: 9%;
+        font-weight: bolder;
+        color: #C77413;
+    }
+}
+
+@media screen and (max-width:1024px){
+
+    .menu--lechic{
+        width: 60%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        @include font('Croissant one',normal,medium);
+
+    }
+    
+    .carte--lechic__part__decorg,.carte--lechic__part__decord{
+        display: none;
+    }
+    .carte--lechic__part__decorg1,.carte--lechic__part__decord1{
+        display: none;
+    }
+    .carte--lechic__part__decorg2,.carte--lechic__part__decord2{
+        display: none;
+    }
+    .carte--lechic__part__plat{
+        text-indent: 2% !important;
+    }
+}
+
+.underline--lechic1,.underline--lechic2,.underline--lechic3{
+    @include underline();
+
+}
+.underline--lechic1:after{
+    @include underline-after(#c57411);
+}
+
+.underline--lechic2:after{
+    @include underline-after(#a56999);
+}
+
+.underline--lechic3:after{
+    @include underline-after(#6e4ccd);
+}
+
+.underline--lechic1:hover:after,.underline--lechic2:hover:after,.underline--lechic3:hover:after{
+    @include underline-transition();
+}
+
+.carte--lechic{
+    background-color:#FFF5FE;
+    color: #424242;
+    margin-bottom: 15%;
+    font-size: xx-large;
+    font-weight: 100;
+    border: none 2px transparent;
+    box-shadow: 1px 1px 5px grey;
+    padding-bottom: 2%;
+
+    &__title{
+        background:linear-gradient(to right, #C77413,#905BFD);
+                -webkit-text-fill-color:transparent;
+                -webkit-background-clip:text;
+                padding-top: 7%;
+    }
+    &__part{
+        font-size: x-large;
+
+        &__decorg{
+            width: 20%;
+            margin-right: 4%;
+        }
+        &__decord{
+            width: 20%;
+            margin-left: 4%;
+        }
+
+        &__decorg1{
+            width: 20%;
+            margin-right: 8%;
+        }
+        &__decord1{
+            width: 20%;
+            margin-left: 8%;
+        }
+
+        &__decorg2{
+            width: 20%;
+            margin-right: 6%;
+        }
+        &__decord2{
+            width: 20%;
+            margin-left: 6%;
+        }
+
+        &__plat{
+            font-size: medium;
+            text-align: left;
+            text-indent: 10%;
+
+            &--orange{
+                color: #c57411;
+            }
+
+            &--pink{
+                color: #a56999;
+            }
+
+            &--purple{
+                color: #6e4ccd;
+            }
+        }
+    }
+}

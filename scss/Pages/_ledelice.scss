@@ -1,0 +1,134 @@
+@import '../Utils/functions';
+@import '../Utils/mixins';
+@import '../Utils/variables';
+
+.menu--ledelice{
+    @include menu_base();
+    margin-left:11%;
+    background-color: #E9EBEB;
+    text-align: center;
+    box-shadow: -3px -3px black;
+    box-shadow: 1px 4px 15px  rgb(189, 189, 189);
+    @include font('Dancing Script',normal,x-large);
+
+    h2{
+        margin-top: 35%;
+        background:linear-gradient(to right, #2040DF,#0A88FB);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip:text;
+    }
+
+    h3{
+        font-weight: normal;
+        color: #0A88FB;
+    }
+}
+
+@media screen and (max-width:1024px){
+
+    .menu--ledelice{
+        width: 60%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        @include font('Dancing Script',normal,large);
+
+    }
+
+    .carte--ledelice__part__decorg,.carte--ledelice__part__decord{
+        display: none;
+    }
+    .carte--ledelice__part__decorg1,.carte--ledelice__part__decord1{
+        display: none;
+    }
+    .carte--ledelice__part__decorg2,.carte--ledelice__part__decord2{
+        display: none;
+    }
+    .carte--ledelice__part__plat{
+        text-indent: 2% !important;
+    }
+}
+
+.underline--ledelice{
+    @include underline();
+
+}
+.underline--ledelice:after{
+    @include underline-after(#2040DF);
+
+}
+
+.underline--ledelice:hover:after{
+    @include underline-transition();
+
+}
+
+
+.carte--ledelice{
+    background-color:#E9EBEB;
+    color: #424242;
+    margin-bottom: 15%;
+    font-size: x-large;
+    font-weight: 100;
+    padding-bottom: 2%;
+
+    border: none 2px transparent;
+    box-shadow: 1px 1px 5px grey;
+
+    &__title{
+        background:linear-gradient(to right, #2040DF,#0A88FB);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip:text;
+        padding-top: 7%;
+    }
+
+
+    &__part{
+        font-family: "Kalam";
+        font-weight: bold;
+
+         &__decorg{
+            width: 20%;
+            margin-right: 6%;
+        }
+        &__decord{
+            width: 20%;
+            margin-left: 6%;
+        }
+
+        &__decorg1{
+            width: 20%;
+            margin-right: 8%;
+        }
+        &__decord1{
+            width: 20%;
+            margin-left: 8%;
+        }
+
+        &__decorg2{
+            width: 20%;
+            margin-right: 8%;
+        }
+        &__decord2{
+            width: 20%;
+            margin-left: 8%;
+        }
+
+        &__plat{
+        font-family: "Kalam";
+        font-weight: lighter;
+        font-size: large;
+        text-align: left;
+        text-indent: 10%;
+        }
+    }
+}
+
+@media all and (max-width:1024px){
+    .carte--ledelice__part__decorg{
+        display: none;
+    }
+    .carte--ledelice__part__decord{
+        display: none;
+    }
+}

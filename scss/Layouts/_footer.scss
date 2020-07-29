@@ -1,0 +1,24 @@
+@import '../Utils/variables';
+@import '../Utils/mixins';
+@import '../Utils/functions';
+
+.footer{
+    margin: 0;
+    background-color: $main_green;
+    font-family: 'Varela Round', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: $main_yellow;
+    font-size: xx-large;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    a{
+        color: $main_yellow;
+        text-decoration: none;
+        &:hover{
+            color: $main_yellow;
+        }
+    }
+}

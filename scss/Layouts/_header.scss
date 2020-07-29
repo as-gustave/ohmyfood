@@ -1,0 +1,19 @@
+@import '../Utils/functions';
+@import '../Utils/mixins';
+@import '../Utils/variables';
+
+.header{
+    background-color: $main_green;
+    padding-bottom: 4%;
+    &__title{
+        margin: 0;
+        font-size: 5em;
+        color: $main_yellow;
+        text-align: center;
+        padding-top: 50px;
+        font-weight: bold;
+    }
+    &__lien{
+        text-decoration: none;
+    }
+}
