@@ -11,7 +11,7 @@
     background-color: $main_green;
     color: $main_yellow;
     margin-bottom: 14%;
-    @include font("Varela Round",bolder,30px);    
+    @include font("Varela Round",bolder,25px);    
     border-radius: 15px;
 
     &__ellipsis1{

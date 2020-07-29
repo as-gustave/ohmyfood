@@ -1,3 +1,19 @@
+/* IMPORTATION DU DOSSIER BASES */
+@font-face {
+  font-family: "Caveat";
+  src: url("../../police/Caveat-Regular.ttf"); }
+@font-face {
+  font-family: "Dancing Script";
+  src: url("../../police"), url("../fonts/menu3/DancingScript-Bold.ttf"); }
+@font-face {
+  font-family: "Kalam";
+  src: url("../../police/Kalam-Regular.ttf"), url("../../police/Kalam-Light.ttf"); }
+@font-face {
+  font-family: "Croissant One";
+  src: url("../../police/CroissantOne-Regular.ttf"); }
+@font-face {
+  font-family: "Varela Round";
+  src: url("../../police/VarelaRound-Regular.ttf"); }
 /* IMPORTATION DU DOSSIER COMPOSANTS */
 @keyframes vibrate {
   0% {
@@ -115,7 +131,7 @@
   margin-bottom: 14%;
   font-family: "Varela Round";
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 25px;
   border-radius: 15px; }
   .future__ellipsis1 {
     display: inline-block;
@@ -132,7 +148,8 @@
 
 @media screen and (max-width: 1024px) {
   .future {
-    width: 70%;
+    font-size: large !important;
+    width: 90%;
     margin-bottom: 20%; } }
 /* IMPORTATION DU DOSSIER LAYOUTS */
 /* Page */
@@ -330,6 +347,8 @@ body, .page {
     height: auto;
     margin-left: auto;
     margin-right: auto; }
+    .menu--lanote p {
+      margin-bottom: 0.5cm; }
 
   .carte--lanote__part__decorg, .carte--lanote__part__decord {
     display: none; }
